@@ -2,9 +2,9 @@
 
 namespace DigitalCoreHub\TinypngLaravel\Tests;
 
+use DigitalCoreHub\TinypngLaravel\TinypngLaravelServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use DigitalCoreHub\TinypngLaravel\TinypngLaravelServiceProvider;
 
 class TestCase extends Orchestra
 {

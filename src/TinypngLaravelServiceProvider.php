@@ -3,9 +3,7 @@
 namespace DigitalCoreHub\TinypngLaravel;
 
 use Spatie\LaravelPackageTools\Package;
-use DigitalCoreHub\TinypngLaravel\TinypngLaravel;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use DigitalCoreHub\TinypngLaravel\Commands\TinypngLaravelCommand;
 
 class TinypngLaravelServiceProvider extends PackageServiceProvider
 {
@@ -21,7 +19,7 @@ class TinypngLaravelServiceProvider extends PackageServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/tinypng.php', 'tinypng');
 
         $this->app->singleton('tinypng', function ($app) {
-            return new TinypngLaravel();
+            return new TinypngLaravel;
         });
     }
 
